@@ -24,11 +24,11 @@ email: "hello@example.com",
 
 ## GitHub Pages 배포
 
-1. GitHub에서 새 저장소를 만듭니다.
-2. 이 폴더의 파일을 저장소에 push합니다.
-3. 저장소 `Settings` > `Pages`로 이동합니다.
-4. `Build and deployment`에서 `Deploy from a branch`를 선택합니다.
-5. Branch는 `main`, folder는 `/root`로 선택한 뒤 저장합니다.
+이 저장소는 GitHub Actions workflow로 GitHub Pages에 배포합니다.
+
+1. GitHub 저장소 `Settings` > `Pages`로 이동합니다.
+2. `Build and deployment`의 source를 `GitHub Actions`로 선택합니다.
+3. `main` 브랜치에 push하면 `.github/workflows/pages.yml`이 정적 파일을 배포합니다.
 
 사용자 사이트로 운영하려면 저장소 이름을 `<github-username>.github.io`로 만들면 됩니다.
 
