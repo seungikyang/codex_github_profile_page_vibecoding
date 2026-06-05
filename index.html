@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Seo Woo의 개발자 포트폴리오. 제품 감각, 프론트엔드, 자동화 프로젝트를 소개합니다."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#08766f" />
+    <meta name="color-scheme" content="light" />
+    <meta property="og:title" content="Seo Woo | Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="제품의 흐름을 이해하고 안정적인 사용자 경험을 만드는 개발자 포트폴리오입니다."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/developer-workspace-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Seo Woo | Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="제품의 흐름을 이해하고 안정적인 사용자 경험을 만드는 개발자 포트폴리오입니다."
+    />
+    <meta name="twitter:image" content="./assets/developer-workspace-hero.jpg" />
+    <title>Seo Woo | Developer Portfolio</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="preload" as="image" href="./assets/developer-workspace-hero.jpg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      defer
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"
+    ></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 이동</a>
+
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#top" aria-label="홈">
+        <span class="brand-mark" data-profile="initials">SW</span>
+        <span class="brand-name" data-profile="name">Seo Woo</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button
+        class="icon-button menu-toggle"
+        type="button"
+        aria-label="메뉴 열기"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" hidden>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="소개">
+        <div class="hero-content">
+          <p class="eyebrow" data-profile="availability">
+            Available for collaboration
+          </p>
+          <h1 data-profile="name">Seo Woo</h1>
+          <p class="role" data-profile="role">Full-stack Developer</p>
+          <p class="lead" data-profile="summary">
+            제품의 흐름을 이해하고, 작은 실험을 안정적인 사용자 경험으로
+            연결하는 개발자입니다.
+          </p>
+
+          <div class="hero-actions" aria-label="주요 링크">
+            <a class="button button-primary" href="#work">
+              <i data-lucide="folder-kanban" aria-hidden="true"></i>
+              프로젝트 보기
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/seoowoo"
+              target="_blank"
+              rel="noreferrer"
+              data-link="github"
+            >
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
+
+          <dl class="hero-stats" id="hero-stats"></dl>
+        </div>
+      </section>
+
+      <section class="signal-band" aria-label="포트폴리오 요약">
+        <div class="signal-track" id="signal-track"></div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-intro">
+          <p class="eyebrow">Selected work</p>
+          <h2>문제를 작게 쪼개고, 사용자가 체감하는 결과로 묶습니다.</h2>
+          <p>
+            아이디어를 배포 가능한 화면으로 옮기고, 실험 과정과 배운 점을
+            다음 작업의 기준으로 남깁니다.
+          </p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section section-contrast" id="stack">
+        <div class="section-intro">
+          <p class="eyebrow">Tech stack</p>
+          <h2>제품을 빠르게 검증하고 오래 유지하기 위한 도구들.</h2>
+        </div>
+        <div class="stack-grid" id="stack-grid"></div>
+      </section>
+
+      <section class="section about-layout" id="about">
+        <div class="section-intro">
+          <p class="eyebrow">About</p>
+          <h2>코드와 사용자 맥락 사이를 오가는 개발자.</h2>
+          <p data-profile="about">
+            요구사항의 의도를 먼저 정리하고, 인터페이스와 데이터 흐름이 함께
+            자연스러워지는 방향을 찾습니다.
+          </p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>같이 만들 제품이 있다면 편하게 연락해주세요.</h2>
+          <p data-profile="contactNote">
+            프로젝트 협업, 포트폴리오 피드백, 채용 관련 대화를 환영합니다.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:hello@example.com" data-link="email">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            Email
+          </a>
+          <a
+            class="button button-secondary"
+            href="https://github.com/seoowoo"
+            target="_blank"
+            rel="noreferrer"
+            data-link="github"
+          >
+            <i data-lucide="github" aria-hidden="true"></i>
+            GitHub
+          </a>
+          <a
+            class="button button-secondary"
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noreferrer"
+            data-link="linkedin"
+          >
+            <i data-lucide="linkedin" aria-hidden="true"></i>
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span data-profile="name">Seo Woo</span>
+        <span aria-hidden="true">/</span>
+        <span data-year></span>
+      </p>
+      <a href="#top" aria-label="맨 위로 이동">
+        <i data-lucide="arrow-up" aria-hidden="true"></i>
+      </a>
+    </footer>
+  </body>
+</html>

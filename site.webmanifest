@@ -1,0 +1,16 @@
+{
+  "name": "Seo Woo Developer Portfolio",
+  "short_name": "Seo Woo",
+  "description": "Seo Woo의 개발자 포트폴리오입니다.",
+  "icons": [
+    {
+      "src": "./assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#08766f",
+  "background_color": "#f7f8f4",
+  "display": "standalone"
+}
