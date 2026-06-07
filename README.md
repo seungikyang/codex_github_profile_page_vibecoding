@@ -41,3 +41,24 @@ python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
 브라우저에서 `http://127.0.0.1:4173/`를 열면 됩니다.
+
+## 전일 국내 시장 요약 자동 생성
+
+이 저장소는 GitHub Actions로 매일 오전 10시(KST)에 코스피/코스닥 중심의 전일 국내 시장 요약 HTML을 생성하고 GitHub Pages에 배포할 수 있습니다.
+
+- 워크플로: `.github/workflows/market-summary.yml`
+- 생성 스크립트: `scripts/generate_market_summary.py`
+- 의존성: `requirements.txt`
+- 생성 위치: `reports/latest.html`, `reports/YYYY/MM/DD/index.html`, `reports/YYYY/MM/DD/data.json`
+- 공개 경로: GitHub Pages의 `/reports/latest.html` 및 `/reports/YYYY/MM/DD/`
+
+GitHub Actions의 cron은 UTC 기준이므로 `0 1 * * *`가 한국 시간 오전 10시에 해당합니다. 수동으로 다시 생성해야 할 때는 GitHub Actions 화면에서 `Generate Daily Domestic Market Summary` 워크플로를 `workflow_dispatch`로 실행하면 됩니다.
+
+로컬에서 생성 테스트를 하려면 다음 명령을 실행합니다.
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/generate_market_summary.py
+```
+
+현재 1차 구현 범위는 FinanceDataReader의 `KS11`(코스피), `KQ11`(코스닥) 데이터 수집 및 HTML/JSON 저장입니다. 해외 지수, 환율, 상품은 후속 단계에서 섹션을 추가하는 방식으로 확장할 수 있습니다.
