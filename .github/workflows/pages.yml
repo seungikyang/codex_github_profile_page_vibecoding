@@ -33,6 +33,9 @@ jobs:
           mkdir _site
           cp index.html 404.html robots.txt site.webmanifest styles.css script.js .nojekyll _site/
           cp -R assets _site/assets
+          if [ -d reports ]; then
+            cp -R reports _site/reports
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
