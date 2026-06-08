@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>전일 시장 요약 - 2026-06-08</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --border: #e8e8e8;
+      --border-strong: #d7d7d7;
+      --text: #333;
+      --muted: #777;
+      --up: #cf5f58;
+      --down: #2f7eb7;
+      --flat: #777;
+      --background: #fff;
+      --cell: #fbfbfb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      width: min(720px, 100%);
+      margin: 0 auto;
+      padding: 28px 24px 48px;
+    }
+    h1 {
+      margin: 0 0 28px;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+    .meta {
+      margin: -16px 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    section { margin: 0 0 34px; }
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.3rem, 4vw, 1.75rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+    .market-grid,
+    .commodity-table {
+      border-top: 3px solid var(--border-strong);
+      border-bottom: 1px solid var(--border);
+    }
+    .market-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .market-card {
+      min-height: 96px;
+      display: grid;
+      place-items: center;
+      padding: 16px 12px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      background: var(--cell);
+    }
+    .market-card:nth-child(odd) { border-right: 1px solid var(--border); }
+    .market-card h3 {
+      margin: 0 0 16px;
+      font-size: clamp(1rem, 3.5vw, 1.3rem);
+      font-weight: 800;
+    }
+    .value {
+      margin: 0;
+      font-size: clamp(0.98rem, 3vw, 1.12rem);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .up { color: var(--up); }
+    .down { color: var(--down); }
+    .flat { color: var(--flat); }
+    .commodity-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: clamp(1rem, 3.2vw, 1.15rem);
+    }
+    .commodity-table th,
+    .commodity-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--border);
+      background: var(--cell);
+    }
+    .commodity-table th {
+      width: 32%;
+      text-align: center;
+      font-weight: 800;
+      border-right: 1px solid var(--border);
+    }
+    .commodity-table td { font-weight: 700; }
+    .notice {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .notice ul { margin: 8px 0 0; padding-left: 18px; }
+    @media (max-width: 520px) {
+      main { padding: 24px 16px 40px; }
+      .market-card { min-height: 86px; }
+      .commodity-table th,
+      .commodity-table td { padding: 13px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>전일 시장 요약</h1>
+    <p class="meta">생성 시각: 2026-06-08 10:47:49 KST</p>
+
+    
+    <section aria-labelledby="section-1">
+      <h2 id="section-1">국내</h2>
+      
+      <div class="market-grid">
+        
+        <article class="market-card">
+          <h3>코스피</h3>
+          <p class="value down">8,160.59 ▼ 5.54%</p>
+        </article>
+        
+        <article class="market-card">
+          <h3>코스닥</h3>
+          <p class="value down">1,002.44 ▼ 4.50%</p>
+        </article>
+        
+      </div>
+      
+    </section>
+    
+    <section aria-labelledby="section-2">
+      <h2 id="section-2">해외</h2>
+      
+      <div class="market-grid">
+        
+        <article class="market-card">
+          <h3>다우 산업</h3>
+          <p class="value down">50,866.78 ▼ 1.35%</p>
+        </article>
+        
+        <article class="market-card">
+          <h3>나스닥 종합</h3>
+          <p class="value down">25,709.43 ▼ 4.18%</p>
+        </article>
+        
+        <article class="market-card">
+          <h3>S&P 500</h3>
+          <p class="value down">7,383.74 ▼ 2.64%</p>
+        </article>
+        
+        <article class="market-card">
+          <h3>니케이225</h3>
+          <p class="value down">63,622.78 ▼ 4.45%</p>
+        </article>
+        
+      </div>
+      
+    </section>
+    
+    <section aria-labelledby="section-3">
+      <h2 id="section-3">환율</h2>
+      
+      <div class="market-grid">
+        
+        <article class="market-card">
+          <h3>원/달러</h3>
+          <p class="value up">1,548.67 ▲ 1.02%</p>
+        </article>
+        
+        <article class="market-card">
+          <h3>중국 위안/달러</h3>
+          <p class="value up">6.7819 ▲ 0.12%</p>
+        </article>
+        
+      </div>
+      
+    </section>
+    
+    <section aria-labelledby="section-4">
+      <h2 id="section-4">상품</h2>
+      
+      <table class="commodity-table">
+        <tbody>
+        
+          <tr>
+            <th scope="row">금</th>
+            <td class="up">4,338.00 ▲ 0.02%</td>
+          </tr>
+        
+          <tr>
+            <th scope="row">은</th>
+            <td class="down">67.42 ▼ 2.22%</td>
+          </tr>
+        
+          <tr>
+            <th scope="row">WTI</th>
+            <td class="up">93.84 ▲ 3.64%</td>
+          </tr>
+        
+        </tbody>
+      </table>
+      
+    </section>
+    
+
+    <aside class="notice">
+      <strong>데이터 출처:</strong> FinanceDataReader<br>
+      각 항목은 조회 가능한 최근 2개 거래일의 종가 기준으로 계산됩니다.
+      <ul>
+      
+        <li>코스피(KS11): 기준일 2026-06-05</li>
+      
+        <li>코스닥(KQ11): 기준일 2026-06-05</li>
+      
+        <li>다우 산업(DJI): 기준일 2026-06-05</li>
+      
+        <li>나스닥 종합(IXIC): 기준일 2026-06-05</li>
+      
+        <li>S&P 500(US500): 기준일 2026-06-05</li>
+      
+        <li>니케이225(N225): 기준일 2026-06-08</li>
+      
+        <li>원/달러(USD/KRW): 기준일 2026-06-08</li>
+      
+        <li>중국 위안/달러(USD/CNY): 기준일 2026-06-08</li>
+      
+        <li>금(GC=F): 기준일 2026-06-08</li>
+      
+        <li>은(SI=F): 기준일 2026-06-08</li>
+      
+        <li>WTI(CL=F): 기준일 2026-06-08</li>
+      
+      </ul>
+    </aside>
+  </main>
+</body>
+</html>
