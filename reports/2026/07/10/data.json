@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-07-10 10:34:39",
+  "generated_date": "2026-07-10",
+  "sections": [
+    {
+      "title": "국내",
+      "layout": "grid",
+      "items": [
+        {
+          "name": "코스피",
+          "symbol": "KS11",
+          "value": 7291.91,
+          "previous_value": 7246.79,
+          "change": 45.11999999999989,
+          "change_rate": 0.6226204981791923,
+          "direction": "up",
+          "data_date": "2026-07-09",
+          "display_value": "7,291.91 ▲ 0.62%",
+          "error": null
+        },
+        {
+          "name": "코스닥",
+          "symbol": "KQ11",
+          "value": 794.0,
+          "previous_value": 785.0,
+          "change": 9.0,
+          "change_rate": 1.1464968152866242,
+          "direction": "up",
+          "data_date": "2026-07-09",
+          "display_value": "794.00 ▲ 1.15%",
+          "error": null
+        }
+      ]
+    },
+    {
+      "title": "해외",
+      "layout": "grid",
+      "items": [
+        {
+          "name": "다우 산업",
+          "symbol": "DJI",
+          "value": 52487.41015625,
+          "previous_value": 52348.390625,
+          "change": 139.01953125,
+          "change_rate": 0.26556600802854197,
+          "direction": "up",
+          "data_date": "2026-07-09",
+          "display_value": "52,487.41 ▲ 0.27%",
+          "error": null
+        },
+        {
+          "name": "나스닥 종합",
+          "symbol": "IXIC",
+          "value": 26206.890625,
+          "previous_value": 25870.650390625,
+          "change": 336.240234375,
+          "change_rate": 1.2996976469398953,
+          "direction": "up",
+          "data_date": "2026-07-09",
+          "display_value": "26,206.89 ▲ 1.30%",
+          "error": null
+        },
+        {
+          "name": "S&P 500",
+          "symbol": "US500",
+          "value": 7543.64013671875,
+          "previous_value": 7482.7099609375,
+          "change": 60.93017578125,
+          "change_rate": 0.8142795337428278,
+          "direction": "up",
+          "data_date": "2026-07-09",
+          "display_value": "7,543.64 ▲ 0.81%",
+          "error": null
+        },
+        {
+          "name": "니케이225",
+          "symbol": "N225",
+          "value": 68881.90625,
+          "previous_value": 67743.8515625,
+          "change": 1138.0546875,
+          "change_rate": 1.6799379740758302,
+          "direction": "up",
+          "data_date": "2026-07-10",
+          "display_value": "68,881.91 ▲ 1.68%",
+          "error": null
+        }
+      ]
+    },
+    {
+      "title": "환율",
+      "layout": "grid",
+      "items": [
+        {
+          "name": "원/달러",
+          "symbol": "USD/KRW",
+          "value": 1510.8800048828125,
+          "previous_value": 1503.3499755859375,
+          "change": 7.530029296875,
+          "change_rate": 0.5008833218585803,
+          "direction": "up",
+          "data_date": "2026-07-10",
+          "display_value": "1,510.88 ▲ 0.50%",
+          "error": null
+        },
+        {
+          "name": "중국 위안/달러",
+          "symbol": "USD/CNY",
+          "value": 6.783699989318848,
+          "previous_value": 6.802499771118164,
+          "change": -0.018799781799316406,
+          "change_rate": -0.2763657836364202,
+          "direction": "down",
+          "data_date": "2026-07-10",
+          "display_value": "6.7837 ▼ 0.28%",
+          "error": null
+        }
+      ]
+    },
+    {
+      "title": "상품",
+      "layout": "table",
+      "items": [
+        {
+          "name": "금",
+          "symbol": "GC=F",
+          "value": 4132.5,
+          "previous_value": 4070.89990234375,
+          "change": 61.60009765625,
+          "change_rate": 1.5131813391133693,
+          "direction": "up",
+          "data_date": "2026-07-10",
+          "display_value": "4,132.50 ▲ 1.51%",
+          "error": null
+        },
+        {
+          "name": "은",
+          "symbol": "SI=F",
+          "value": 60.55500030517578,
+          "previous_value": 58.16400146484375,
+          "change": 2.3909988403320312,
+          "change_rate": 4.110788082173525,
+          "direction": "up",
+          "data_date": "2026-07-10",
+          "display_value": "60.56 ▲ 4.11%",
+          "error": null
+        },
+        {
+          "name": "WTI",
+          "symbol": "CL=F",
+          "value": 72.08999633789062,
+          "previous_value": 73.5199966430664,
+          "change": -1.4300003051757812,
+          "change_rate": -1.9450494701711105,
+          "direction": "down",
+          "data_date": "2026-07-10",
+          "display_value": "72.09 ▼ 1.95%",
+          "error": null
+        }
+      ]
+    }
+  ]
+}
